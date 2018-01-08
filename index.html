@@ -61,13 +61,15 @@
         min-height: 100%;
     }
 
-    .lablec {
-        bottom: 0;
+    .fejlec {
+        text-align: center;
+        margin: 0;
     }
 
     a {
         color: white;
         text-decoration: none;
+        bottom: 0;
     }
 
     .gomb {
@@ -83,7 +85,9 @@
         transition-duration: 1s;
     }
 
-    
+    .latlak {display: inline-block; filter: blur(1px);}
+      .latlak:hover {filter: none;
+          transition-duration:  0.5s;}
 
     @media (max-width: 767px) {
         .maxmeret {
@@ -99,7 +103,7 @@
         <source src="hatterke.mp4" type="video/mp4">
     </video>
 
-
+    <div class="fejlec vizkozepre latlak"><a href="index.html">HUN</a> | <a href="eng1.html">ENG</a></div>
     <div class="tokkozepre cim">Válassz!
         <div class="gombdoboz">
             <a href="adatok.html" class="gomb">Adatok</a>
@@ -108,7 +112,6 @@
             <a href="munkak.html" class="gomb">Munkáim</a>
         </div>
     </div>
-
 </body>
 
 </html>
