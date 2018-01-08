@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Julia Kolozsvary</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        color: white;
+        font-family: arial;
+        overflow: hidden;
+    }
+
+    .hatter {
+        background-image: url("hatter.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .fuggkozepre {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-bottom: -50%;
+    }
+
+    .vizkozepre {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-right: -50%;
+    }
+
+    .tokkozepre {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        margin-right: -50%;
+    }
+
+    .cim {
+        font-family: 'Work Sans';
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .maxmeret {
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .fejlec {
+        text-align: center;
+        margin: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        bottom: 0;
+    }
+
+    .gomb {
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    .gomb:hover {
+        filter: invert(100%);
+        transition-duration: 1s;
+    }
+
+    .latlak {display: inline-block; filter: blur(1px);}
+      .latlak:hover {filter: none;
+          transition-duration:  0.5s;}
+
+    @media (max-width: 767px) {
+        .maxmeret {
+            display: none;
+        }
+    }
+
+    @media (max-height: 450px) {}
+</style>
+
+<body class="hatter">
+    <video autoplay loop muted poster="hatter.jpg" class="tokkozepre maxmeret">
+        <source src="hatterke.mp4" type="video/mp4">
+    </video>
+
+    <div class="fejlec vizkozepre latlak"><a href="index.html">HUN</a> | <a href="eng1.html">ENG</a></div>
+    <div class="tokkozepre cim">Choose one!
+        <div class="gombdoboz">
+            <a href="adatokeng.html" class="gomb">Information</a>
+            <a href="tapasztalatokeng.html" class="gomb">Experience</a>
+            <a href="elerhetosegekeng.html" class="gomb">Contact details</a>
+            <a href="munkakeng.html" class="gomb">Portfolio</a>
+        </div>
+    </div>
+</body>
+
+</html>
