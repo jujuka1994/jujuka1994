@@ -1,0 +1,121 @@
+<html>
+    <meta charset="UTF-8">
+
+    <head>
+        <title>Jegyvásárlás</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        color: black;
+        font-family: arial;
+        overflow: hidden;
+    }
+    .hatter {
+        background-image:url("snhatter.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .fuggkozepre {
+        position: absolute;
+        top: 20%;
+        transform: translate(0, -50%);
+        margin-bottom: -20%;
+    }
+
+    .vizkozepre {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-right: -50%;
+    }
+
+    .tokkozepre {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        margin-right: -50%;
+
+    }
+ 
+ 
+.tokkozepre2{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        margin-right: -50%;
+}
+
+.tokkozepre3{
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        margin-right: -50%;
+}
+
+    .cim {
+        font-family: 'Work Sans';
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .gomb {
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        bottom: 0;
+    }
+
+    .gomb:hover {
+        filter: invert(100%);
+        transition-duration: 1s;
+    }
+
+    .latlak {display: inline-block; filter: blur(1px);}
+      .latlak:hover {filter: none;
+          transition-duration:  0.5s;}
+
+    @media (max-width: 767px) {
+        .maxmeret {
+            display: none;
+        }
+</style>
+
+    <body class="hatter">
+
+        <div>
+            <div class="tokkozepre cim"; "cim">Sexnuggets koncertjegy</div>
+            <div class="tokkozepre3">Ár: 3000 Ft (1500 Ft/darab)</div>
+            
+            <div class="tokkozepre2">
+                <a href="vasarlas.html" class="gomb">Vásárlás</a>
+            </div>
+    
+        </div>
+
+    </body>
+
+</html>
